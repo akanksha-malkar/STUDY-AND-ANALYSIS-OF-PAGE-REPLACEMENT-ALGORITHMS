@@ -1,0 +1,41 @@
+To design and develop a project to compare first in first out (FIFO) and optimal page replacement
+algorithms, for given set of page numbers, and page frames.
+
+Algorithm:
+1- Start traversing the pages.
+1. If set holds less pages than capacity.
+ a) Insert page into the set one by one until
+ the size of set reaches capacity or all
+ page requests are processed.
+ b) Simultaneously maintain the pages in the
+ queue to perform FIFO.
+ c) Increment page fault
+ii) Else
+ If current page is present in set, do nothing.
+ Else
+ a) Remove the first page from the queue
+ as it was the first to be entered in the memory
+ b) Replace the first page in the queue with
+ the current page in the string.
+ c) Store current page in the queue.
+ d) Increment page faults.
+2. Return page faults.
+
+DEPARTMENT OF CSE, TKIET WARANANAGAR 6
+STUDY AND ANALYSIS OF PAGE REPLACEMENT ALGORITHMS
+
+3.Solution Techniques:
+
+In operating systems that use paging for memory management, page replacement algorithms are needed to
+decide which page needed to be replaced when new page comes in. Whenever a new page is referred and
+not present in memory, page fault occurs and Operating System replaces one of the existing pages with
+newly needed page. Different page replacement algorithms suggest different ways to decide which page to
+replace. The target for all algorithms is to reduce number of page faults.
+
+
+We have studied different page replacement algorithms. After analysis we obtain that the optimal
+page replacement algorithm gives less page fault rate among the other algorithms by creating
+running program which contains array data structure, user defined functions, different conditional
+statements and file handling for helping purpose. But it can’t be used in the real world, because we
+don’t know the pages that are going to be required in the near future. It is used for comparing the
+other algorithms efficiency.
